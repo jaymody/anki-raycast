@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "new-anki-card",
-  "title": "New Anki Card",
-  "description": "",
+  "name": "anki-raycast",
+  "title": "Anki",
+  "description": "Useful raycast commands for your Anki collection.",
   "icon": "command-icon.png",
   "author": "jaykmody",
   "license": "MIT",
@@ -10,8 +10,34 @@
     {
       "name": "index",
       "title": "New Anki Card",
-      "description": "",
+      "description": "Create and add a new Anki Card.",
       "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "pythonPath",
+      "type": "textfield",
+      "title": "Python Path",
+      "placeholder": "/usr/bin/python3",
+      "description": "Path to python that has the anki pip package installed.",
+      "required": true
+    },
+    {
+      "name": "collectionPath",
+      "type": "textfield",
+      "title": "Collection Path",
+      "placeholder": "/Users/<YOUR USERNAME>/Library/Application Support/Anki2/User 1/collection.anki2",
+      "description": "Path to Anki collection file.",
+      "required": true
+    },
+    {
+      "name": "deckName",
+      "type": "textfield",
+      "default": "Default",
+      "title": "Deck Name",
+      "description": "The name of the deck you'd want the extension to work on.",
+      "required": true
     }
   ],
   "dependencies": {
